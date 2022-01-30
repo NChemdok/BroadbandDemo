@@ -616,12 +616,29 @@ div#preloader {
     width: 5%;
   }
 }
+
+@media (max-width: 768px) {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 6%;
+  }
+}
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1;
 }
+
+@media (max-width: 768px) {
+  #hero .carousel-control-next-icon,
+  #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 16px;
+    line-height: 0.5;
+  }
+}
+
 #hero .carousel-indicators li {
   cursor: pointer;
 }
@@ -699,8 +716,26 @@ div#preloader {
 }
 
 .services-details {
-  padding-top: 40px;
+  padding-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
   transition: all 0.5s ease 0s;
+  color: rgb(0, 0, 0);
+}
+
+.services-details p {
+  padding-top: 5px;
+  font-weight: 200;
+  font-size: medium;
+  transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 768px) {
+  .services-details > p {
+    padding-top: 5px;
+    font-size: small;
+    transition: all 0.5s ease 0s;
+  }
 }
 
 .services-details:hover h4,
@@ -723,7 +758,7 @@ div#preloader {
 }
 
 .single-services > p {
-  color: #333;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
